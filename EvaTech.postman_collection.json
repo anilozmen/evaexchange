@@ -1,0 +1,1018 @@
+{
+	"info": {
+		"_postman_id": "c1e891de-761d-4590-b912-d5aea6281fe4",
+		"name": "EvaTech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13971895"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "845"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34d-Sx8yLbFbrN2E0HzqhXVG9axyGZs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 03:10:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"email\": \"john@doe.com\",\n        \"balance\": \"12000.00\",\n        \"createdAt\": \"2023-09-24T00:44:53.991Z\",\n        \"updatedAt\": \"2023-09-24T00:44:53.991Z\"\n    },\n    {\n        \"id\": 2,\n        \"firstName\": \"Jane\",\n        \"lastName\": \"Doe\",\n        \"email\": \"jane@doe.com\",\n        \"balance\": \"2000.00\",\n        \"createdAt\": \"2023-09-24T00:44:53.991Z\",\n        \"updatedAt\": \"2023-09-24T00:44:53.991Z\"\n    },\n    {\n        \"id\": 3,\n        \"firstName\": \"Joseph\",\n        \"lastName\": \"Doe\",\n        \"email\": \"joseph@doe.com\",\n        \"balance\": \"0.00\",\n        \"createdAt\": \"2023-09-24T00:44:53.991Z\",\n        \"updatedAt\": \"2023-09-24T00:44:53.991Z\"\n    },\n    {\n        \"id\": 4,\n        \"firstName\": \"Jonathon\",\n        \"lastName\": \"Doe\",\n        \"email\": \"jonathon@doe.com\",\n        \"balance\": \"24000.00\",\n        \"createdAt\": \"2023-09-24T00:44:53.991Z\",\n        \"updatedAt\": \"2023-09-24T00:44:53.991Z\"\n    },\n    {\n        \"id\": 5,\n        \"firstName\": \"Jerry\",\n        \"lastName\": \"Doe\",\n        \"email\": \"jerry@doe.com\",\n        \"balance\": \"10000.00\",\n        \"createdAt\": \"2023-09-24T00:44:53.991Z\",\n        \"updatedAt\": \"2023-09-24T00:44:53.991Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get a User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get a User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "166"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a6-j3XN2PkQ2tZcCAP6LO5W+HlCf5Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 03:10:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"email\": \"john@doe.com\",\n    \"balance\": \"12000.00\",\n    \"createdAt\": \"2023-09-24T00:44:53.991Z\",\n    \"updatedAt\": \"2023-09-24T00:44:53.991Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get a User w/ Portfolio",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"Portfolio Name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/1/portfolios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1",
+								"portfolios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get a User w/ Portfolio",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\" : \"Portfolio Name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/1/portfolios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"1",
+										"portfolios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "213"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d5-lcXQfOJxtU/ZAWegF3NMdLTV+5A\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 04:37:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"email\": \"john@doe.com\",\n    \"balance\": \"12000.00\",\n    \"createdAt\": \"2023-09-24T04:11:25.397Z\",\n    \"updatedAt\": \"2023-09-24T04:11:25.397Z\",\n    \"Portfolio\": {\n        \"id\": 1,\n        \"name\": \"John's Portfolio\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create a User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Anıl\",\n    \"lastName\": \"Özmen\",\n    \"email\": \"me@anilozmen.com\",\n    \"balance\": 25000.00,\n    \"ignoredField\": \"This will be ignored.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create a User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Anıl\",\n    \"lastName\": \"Özmen\",\n    \"email\": \"me@anilozmen.com\",\n    \"balance\": 25000.00,\n    \"ignoredField\": \"This will be ignored.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "174"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ae-xv17iRhW0256vDjuOvWx4iShzqM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 03:12:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"firstName\": \"Anıl\",\n    \"lastName\": \"Özmen\",\n    \"balance\": \"25000.00\",\n    \"email\": \"me@anilozmen.com\",\n    \"updatedAt\": \"2023-09-24T03:12:56.313Z\",\n    \"createdAt\": \"2023-09-24T03:12:56.313Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create a Portfolio to a User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"Jerry's Portfolio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/5/portfolios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"5",
+								"portfolios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create a Portfolio to a User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\" : \"Jerry's Portfolio\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/5/portfolios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"5",
+										"portfolios"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "124"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7c-s8SEKk6DxfevoqOs41DBKC0i3V4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 03:32:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"userId\": 5,\n    \"name\": \"Jerry's Portfolio\",\n    \"updatedAt\": \"2023-09-24T03:32:18.562Z\",\n    \"createdAt\": \"2023-09-24T03:32:18.562Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Buy Share(s)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quantity\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/1/share/1/buy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1",
+								"share",
+								"1",
+								"buy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Buy Share (s)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/1/share/1/buy",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"1",
+										"share",
+										"1",
+										"buy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "158"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9e-1TKhOF3+1c9NOE9YV6krPimWuyE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 05:00:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"portfolioId\": 1,\n    \"shareId\": 1,\n    \"action\": \"BUY\",\n    \"price\": \"12.50\",\n    \"quantity\": 2,\n    \"updatedAt\": \"2023-09-24T05:00:45.158Z\",\n    \"createdAt\": \"2023-09-24T05:00:45.158Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Sell Share(s)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quantity\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/users/1/share/2/sell",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1",
+								"share",
+								"2",
+								"sell"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sell Share(s)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/1/share/2/sell",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"1",
+										"share",
+										"2",
+										"sell"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8f-QWSLZr8B6wf9Caiwl+eQzzi9rK0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 05:48:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"portfolioId\": 1,\n    \"shareId\": 2,\n    \"action\": \"SELL\",\n    \"quantity\": 1,\n    \"updatedAt\": \"2023-09-24T05:48:55.482Z\",\n    \"createdAt\": \"2023-09-24T05:48:55.482Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Shares",
+			"item": [
+				{
+					"name": "Get All Shares",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/shares",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"shares"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Shares",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/shares",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"shares"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "346"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15a-3wwW6eHSa9JQarsanohef44K7Wo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 03:51:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"ABC\",\n        \"rate\": \"12.50\",\n        \"createdAt\": \"2023-09-24T03:31:58.235Z\",\n        \"updatedAt\": \"2023-09-24T03:31:58.235Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"BAC\",\n        \"rate\": \"20.00\",\n        \"createdAt\": \"2023-09-24T03:31:58.235Z\",\n        \"updatedAt\": \"2023-09-24T03:31:58.235Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"CAB\",\n        \"rate\": \"41.10\",\n        \"createdAt\": \"2023-09-24T03:31:58.235Z\",\n        \"updatedAt\": \"2023-09-24T03:31:58.235Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get a Share",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/shares/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"shares",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get a Share",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/shares/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"shares",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "114"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"72-u+6+B2SB4T+5cp8BUPGVhhE+W8s\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 03:51:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"ABC\",\n    \"rate\": \"12.50\",\n    \"createdAt\": \"2023-09-24T03:31:58.235Z\",\n    \"updatedAt\": \"2023-09-24T03:31:58.235Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create a Share",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"XYZ\",\n    \"rate\": 55.99\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/shares",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"shares"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create a Share",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"XYZ\",\n    \"rate\": 55.99\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/shares",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"shares"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "114"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"72-8TIwg0onxfI+yeAnANS2OahP74E\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 03:51:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"name\": \"XYZ\",\n    \"rate\": \"55.99\",\n    \"updatedAt\": \"2023-09-24T03:51:51.964Z\",\n    \"createdAt\": \"2023-09-24T03:51:51.964Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update a Share",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rate\": 12.25\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/shares/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"shares",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update a Share",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"rate\": 12.25\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/shares/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"shares",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a-bAsFyilMr4Ra1hIU5PyoyFRunpI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Sep 2023 03:53:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
