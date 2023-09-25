@@ -22,20 +22,22 @@
 ## Installation
 
 ```bash
-# Install Dependencies
-$ npm install
+$ cd evaexchange
 
-# Create the Database
-$ npm run db:create
+# Build a docker image
+$ docker-compose build
+
+# Create containers
+$ docker-compose up -d
+
+# Access the Node.js container shell
+$ docker exec -it node_app sh
 
 # Create Tables
 $ npm run db:migrate
 
 # Import All Dummy Data
 $ npm run db:seeds
-
-# Start
-$ npm run start
 
 $ http://localhost:3000
 ```
