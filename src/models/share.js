@@ -11,9 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-
       this.hasMany(models.Trade, { foreignKey: 'shareId' });
-
     }
   }
   Share.init({
@@ -30,8 +28,5 @@ module.exports = (sequelize, DataTypes) => {
     modelName: 'Share',
     tableName: 'shares'
   });
-
-  Share.sync({});
-
   return Share;
 };

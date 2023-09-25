@@ -16,16 +16,6 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
-console.log("ZAa")
-
-sequelize.sync({ alter: true }) // Use { force: true } to drop and recreate tables
-  .then(() => {
-    console.log('Database and tables created successfully.');
-  })
-  .catch((error) => {
-    console.error('Error synchronizing database:', error);
-  });
-
 fs
   .readdirSync(__dirname)
   .filter(file => {

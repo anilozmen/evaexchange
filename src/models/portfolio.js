@@ -11,7 +11,6 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-
       this.hasMany(models.Trade, {
         foreignKey: 'portfolioId',
       });
@@ -26,8 +25,5 @@ module.exports = (sequelize, DataTypes) => {
     modelName: 'Portfolio',
     tableName: 'portfolios'
   });
-
-  Portfolio.sync({});
-
   return Portfolio;
 };
